@@ -214,7 +214,8 @@ class _HomeScreenState extends State<HomeScreen> {
             Text(
               isClockedIn ? 'مسجل دخول' : 'غير مسجل',
               style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),n            const SizedBox(height: 20),
+            ),
+            const SizedBox(height: 20),
             if (isClockedIn)
               Text(
                 'الوقت المعمل: ${workedTime.inHours}:${(workedTime.inMinutes % 60).toString().padLeft(2, '0')}:${(workedTime.inSeconds % 60).toString().padLeft(2, '0')}',
